@@ -30,7 +30,7 @@ Below you can find the models we used for this data set and their training and t
 | Decision Trees| 78.6% | 76.4%|
 
 <details>
- <summary>Attribute Information</summary>
+ <summary style="font-size:1.2em"> Attribute Information</summary>
 
 1:  surgery?
 - 1 = Yes, it had surgery
