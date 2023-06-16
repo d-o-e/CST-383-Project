@@ -12,7 +12,7 @@ This data science project leverages historical medical records to effectively de
 To develop a predictive model capable of estimating the probability of survival for horses affected by colic. This project aims to provide valuable insights to veterinarians and horse owners, enabling them to make well-informed decisions regarding treatment options and care. Furthermore, the objective involves conducting an in-depth analysis to identify the most influential features or attributes for accurately predicting colic occurrences.
 
 ## Dataset
-- Dataset can be found in [Kaggle](https://www.kaggle.com/datasets/uciml/horse-colic)
+- Dataset can be found in [ UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/47/horse+colic)
 - Dataset includes 299 instances for training and 89 instances for testing, 388 instances in total.
 - Dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
 
