@@ -20,9 +20,11 @@ To develop a predictive model capable of estimating the probability of survival 
 - For missing numerical values we used median imputation.
 
 ## Models Compared 
-- Random Forest Classifier : 96%
-- K-Nearest Neighbors Classifier: 
-
+Below you can find the models we used for this data set and their training and test accuracies
+- Random Forest Classifier : 95.65% - 95.51% 
+- K-Nearest Neighbors Classifier: 74.25% - 76%
+- Logistic Regression: 65.89% - 67.42%
+- Decision Trees: 78.6% - 76.4%
 
 ### Attribute Information:
 
