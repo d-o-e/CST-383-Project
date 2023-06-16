@@ -13,10 +13,12 @@ To develop a predictive model capable of estimating the probability of survival 
 
 ## Dataset
 
-Dataset includes 299 rows for training and 89 rows for testing. 
-Before any modification the dataset feature types are 17 objects , 7 floats , 4 ints in total 28.
+Dataset includes 299 instances for training and 89 instances for testing. 
+Before any modification the dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
 
-We have merged and convert all categorical data using one-hot encode
+We discarded features with missing values percentages are higher than 60%
+We have merged and convert all categorical data using one-hot encode.
+
 
 Attribute Information:
 
@@ -28,7 +30,7 @@ Attribute Information:
      - 1 = Adult horse
      - 2 = Young (< 6 months)
 
-     3:  Hospital Number 
+     3:  Hospital Number (dropped)
      - numeric id
      - the case number assigned to the horse (may not be unique if the horse is treated > 1 time)
 
@@ -189,7 +191,7 @@ Attribute Information:
      - linear
      - the higher the level of protein the more likely it is to have a compromised gut. Values are in gms/dL
 
-     23: outcome
+     23: outcome (TARGET)
      - what eventually happened to the horse?
      - possible values:
           - 1 = lived
