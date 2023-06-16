@@ -263,7 +263,7 @@ Below you can find the models we used for this data set and their training and t
 | Decision Trees| 78.6% | 76.4%|
 
 ## Methods 
-We did use anything but the dataset from Kaggle. We trained our dataset using different models to find the most accurate one at predicting if horse will survive.
+We did use anything but the dataset from UCI Machine Learning Repository. We trained our dataset using different models to find the most accurate one at predicting if horse will survive.
 
 ## Results 
 After evaluating multiple models, we found that the Random Forest Classifier (RFC) outperformed the other four models in terms of accuracy for predicting horse survival. By utilizing RFC, we were able to achieve an impressive prediction accuracy of 95%.
