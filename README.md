@@ -13,14 +13,18 @@ To develop a predictive model capable of estimating the probability of survival 
 
 ## Dataset
 
-Dataset includes 299 instances for training and 89 instances for testing. 
-Before any modification the dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
+- Dataset includes 299 instances for training and 89 instances for testing, 388 instances in total.
+- Before any modification the dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
+- We discarded features with missing values percentages are higher than 50%
+- We have merged and convert all categorical data using one-hot encode.
+- For missing numerical values we used median imputation.
 
-We discarded features with missing values percentages are higher than 60%
-We have merged and convert all categorical data using one-hot encode.
+## Models Compared 
+- Random Forest Classifier : 96%
+- K-Nearest Neighbors Classifier: 
 
 
-Attribute Information:
+### Attribute Information:
 
      1:  surgery?
      - 1 = Yes, it had surgery
