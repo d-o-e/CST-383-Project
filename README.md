@@ -248,7 +248,7 @@ To develop a predictive model capable of estimating the probability of survival 
 
 ---
 
-## Future Engineering
+## Feature Engineering
 - We discarded features with missing values percentages are higher than 50%
 - We have merged and convert all categorical data using one-hot encode.
 - For missing numerical values we used median imputation.
