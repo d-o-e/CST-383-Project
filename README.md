@@ -15,22 +15,10 @@ To develop a predictive model capable of estimating the probability of survival 
 - Dataset can be found in [Kaggle](https://www.kaggle.com/datasets/uciml/horse-colic)
 - Dataset includes 299 instances for training and 89 instances for testing, 388 instances in total.
 - Dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
-## Future Engineering
-- We discarded features with missing values percentages are higher than 50%
-- We have merged and convert all categorical data using one-hot encode.
-- For missing numerical values we used median imputation.
 
-## Models Compared 
-Below you can find the models we used for this data set and their training and test accuracies
-| Model| Training Accuracy | Test accuracy |
-| -- | --- |- | 
-| Random Forest Classifier | 95.65% |95.51% |
-|  K-Nearest Neighbors Classifier   | 74.25% | 76% |
-|Logistic Regression| 65.89% | 67.42%|
-| Decision Trees| 78.6% | 76.4%|
 
 <details>
- <summary style="font-size:1.2em"> Attribute Information</summary>
+ <summary> Attribute Information</summary>
 
 1:  surgery?
 - 1 = Yes, it had surgery
@@ -256,3 +244,19 @@ Below you can find the models we used for this data set and their training and t
      - 2 = No
 - this variable is of no significance since pathology data is not included or collected for these cases
 </details>
+
+---
+
+## Future Engineering
+- We discarded features with missing values percentages are higher than 50%
+- We have merged and convert all categorical data using one-hot encode.
+- For missing numerical values we used median imputation.
+
+## Models Compared 
+Below you can find the models we used for this data set and their training and test accuracies
+| Model| Training Accuracy | Test accuracy |
+| -- | --- |- | 
+| Random Forest Classifier | 95.65% |95.51% |
+|  K-Nearest Neighbors Classifier   | 74.25% | 76% |
+|Logistic Regression| 65.89% | 67.42%|
+| Decision Trees| 78.6% | 76.4%|
