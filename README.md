@@ -243,7 +243,7 @@ To develop a predictive model capable of estimating the probability of survival 
           - 1 = Yes
           - 2 = No
      - this variable is of no significance since pathology data is not included or collected for these cases
-     
+
 </details>
 
 ---
@@ -261,3 +261,9 @@ Below you can find the models we used for this data set and their training and t
 |  K-Nearest Neighbors Classifier   | 74.25% | 76% |
 |Logistic Regression| 65.89% | 67.42%|
 | Decision Trees| 78.6% | 76.4%|
+
+## Methods 
+
+## Results 
+
+## Summary
