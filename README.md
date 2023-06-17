@@ -249,9 +249,15 @@ Therefore, the hypothesis being tested is whether we can predict the survivabili
 ---
 
 ## Feature Engineering
-- We discarded features with missing values percentages are higher than 50%
-- We have merged and converted all categorical data using one-hot encoding.
-- For missing numerical values, we used median imputation.
+Various feature engineering techniques are employed to prepare the dataset for further analysis, taking into account the percentage of missing values and the data type of each column.
+
+- ***One-Hot Encoding***: Categorical data is converted into numeric data using one-hot encoding.
+
+- ***Removal of columns with high missing percentages***: Columns with more than 50% missing values are considered for removal from the dataset, eliminating columns with insufficient data.
+
+- ***Mode imputation*** for categorical columns: Missing values in categorical columns (identified by the dtype == 'object' condition) are filled using the mode.
+
+- ***Median imputation*** for numerical columns: Missing values in numerical columns are filled using the median value of that specific column.
 
 ## Models Compared 
 Below you can find the models we used for this data set and their training and test accuracies
