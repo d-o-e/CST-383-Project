@@ -6,10 +6,10 @@
 - Deniz Erisgen
 - Tiffany Andersen
 
-This data science project leverages historical medical records to effectively determine the survival probability of horses with colic by utilizing predictive models that evaluate the likelihood of their survival, taking into account past medical conditions.
+## Introduction
+This data science project leverages historical medical records to effectively determine the survival probability of horses with colic by utilizing predictive models that evaluate the likelihood of their survival, taking into account past medical conditions. This project was undertaken because colic poses a significant threat to horses, resulting in a high number of deaths and often being challenging to detect (Egenvall et al., 2008). Colic leads to an estimated annual cost of $115.3 million to the US equine community (Traub-Dargatz et al., 2001). Additionally, horse owners consider colic a major concern (Mellor et al., 2001).
 
-## Objective
-To develop a predictive model capable of estimating the probability of survival for horses affected by colic. This project aims to provide valuable insights to veterinarians and horse owners, enabling them to make well-informed decisions regarding treatment options and care. Furthermore, the objective involves conducting an in-depth analysis to identify the most influential features or attributes for accurately predicting colic occurrences.
+Therefore, the hypothesis being tested is whether we can predict the survivability of a horse with colic based on the features observed during a veterinary visit. The objective and purpose of this research are to develop a predictive model capable of estimating the probability of survival for horses affected by colic. This project aims to provide valuable insights to veterinarians and horse owners, enabling them to make well-informed decisions regarding treatment options and care. Furthermore, the objective involves conducting an in-depth analysis to identify the most influential features or attributes for accurately predicting colic occurrences.
 
 ## Dataset
 - Dataset can be found in [ UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/47/horse+colic)
@@ -250,8 +250,8 @@ To develop a predictive model capable of estimating the probability of survival 
 
 ## Feature Engineering
 - We discarded features with missing values percentages are higher than 50%
-- We have merged and convert all categorical data using one-hot encode.
-- For missing numerical values we used median imputation.
+- We have merged and converted all categorical data using one-hot encoding.
+- For missing numerical values, we used median imputation.
 
 ## Models Compared 
 Below you can find the models we used for this data set and their training and test accuracies
@@ -263,9 +263,32 @@ Below you can find the models we used for this data set and their training and t
 | Decision Trees| 78.6% | 76.4%|
 
 ## Methods 
-We did use anything but the dataset from UCI Machine Learning Repository. We trained our dataset using different models to find the most accurate one at predicting if horse will survive.
+We did not use anything but the dataset from the UCI Machine Learning Repository. We trained our dataset using different models to find the most accurate one for predicting if a horse will survive.
 
 ## Results 
 After evaluating multiple models, we found that the Random Forest Classifier (RFC) outperformed the other four models in terms of accuracy for predicting horse survival. By utilizing RFC, we were able to achieve an impressive prediction accuracy of 95%.
 
+## Discussion
+
+The information from this study implies that there are certainly characteristics that correlate with the survivability of colic in horses. This is important because, as stated above, colic often leads to death in horses, and caretakers, including veterinarians, are often unsure about the indicators to look for. The perspective for future research would involve improved feature engineering, considering that this study really only utilizes One-Hot Encoding. There could be potential for combinations of features, such as the three lesion columns, which could help in more accurately predicting the diagnosis and treatment of colic in horses. All three lesion columns appeared on the top ten correlation values to 'outcome'. There also needs to be more analysis on the total_protein column, but due to missing values this column proved to only yield a correlation value of 0.26. 
+
+Additionally, more advanced machine learning models, like recurrent neural networks, could be implemented. One interesting aspect that future researchers should consider is using external validation by collecting other datasets related to horse colic and performing validation of the newly created models. This could lead to interesting results, considering that the dataset used for this project is from 1998 and there is a need for an updated dataset with more information. In any case, this report outlines certain characteristics in horses with colic that are more prevalent among those that ultimately die. Although the correlation could be stronger, there is certainly something worth investigating further, as it has the potential to benefit the equestrian community in numerous ways.
+
 ## Summary
+
+This project employed a diverse range of models, including the Random Forest Classifier, K-Nearest Neighbors Classifier, Logistic Regression, and Decision Tree, to predict the outcome of horses with colic. Among these models, the Random Forest Classifier demonstrated the highest accuracy, achieving a test accuracy rate of over 96 percent. The Decision Tree model followed closely behind, with a test accuracy exceeding 83 percent. While the Random Forest Classifier yielded impressive results in this project, further investigation is recommended. Conducting in-depth analysis, utilizing an updated dataset, and performing external validation could enhance the accuracy and reliability of the predictive models.
+
+Although individual features alone could not reliably predict the horse's outcome, three features showed strong correlations: packed_cell_volume, pulse, and total protein. These attributes played a significant role in determining the prognosis of the horses. Additionally, two noteworthy feature relationships emerged from the analysis: the relationship between peristalsis (gut activity) and abdominal distention (bloating), as well as the association between the absence of feces and the likelihood of requiring surgery.
+
+Given that the dataset is from 1998, the information may not reflect the most current information and practices related to horse colic. Additionally, there could be new variables captured in a newer dataset that could yield higher and more consistent results. Moreover, the sample size was relatively small, making certain machine learning tasks less feasible. Another issue was the 30% of missing values in the dataset, resulting in data quality and incomplete information concerns. Although our data cleaning and preprocessing addressed many of these cases, the analysis and modeling could have been improved with a more complete dataset.
+
+## References
+
+Egenvall, A., Penell, J., Bonnett, B. N., Blix, J., & Pringle, J. (2008). Demographics and costs of colic in Swedish horses. *Journal of veterinary internal medicine, 22*(4), 1029–1037.
+
+McLeish,Mary and Cecile,Matt. (1989). Horse Colic. UCI Machine Learning Repository. https://doi.org/10.24432/C58W23.
+
+Mellor, D. J., Love, S., Walker, R., Gettinby, G., & Reid, S. W. (2001). Sentinel practice-based survey of the management and health of horses in northern Britain. *The Veterinary record, 149*(14), 417–423.
+
+Traub-Dargatz, J. L., Kopral, C. A., Seitzinger, A. H., Garber, L. P., Forde, K., & White, N. A. (2001). Estimate of the national incidence of and operation-level risk factors for colic among horses in the United States, spring 1998 to spring 1999. *Journal of the American Veterinary Medical Association, 219*(1), 67–71.
+
