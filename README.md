@@ -12,7 +12,7 @@ This data science project leverages historical medical records to effectively de
 Therefore, the hypothesis being tested is whether we can predict the survivability of a horse with colic based on the features observed during a veterinary visit. The objective and purpose of this research are to develop a predictive model capable of estimating the probability of survival for horses affected by colic. This project aims to provide valuable insights to veterinarians and horse owners, enabling them to make well-informed decisions regarding treatment options and care. Furthermore, the objective involves conducting an in-depth analysis to identify the most influential features or attributes for accurately predicting colic occurrences.
 
 ## Dataset
-- Dataset can be found in [ UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/47/horse+colic)
+- Dataset can be found on [Kaggle](https://www.kaggle.com/datasets/uciml/horse-colic) or at the original data source over, the [ UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/47/horse+colic)
 - Dataset includes 299 instances for training and 89 instances for testing, 388 instances in total.
 - Dataset feature types are 17 objects , 7 floats , 4 ints in total 28. 
 
@@ -269,7 +269,18 @@ Below you can find the models we used for this data set and their training and t
 | Decision Trees| 78.6% | 76.4%|
 
 ## Methods 
-We did not use anything but the dataset from the UCI Machine Learning Repository. We trained our dataset using different models to find the most accurate one for predicting if a horse will survive.
+We did not use anything but the dataset from the UCI Machine Learning Repository. We trained our dataset using different models to find the most accurate one for predicting if a horse will survive. 
+
+The tools, packages, and libraries used include:
+- numpy
+- pandas
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- Graphviz
+- Google Colab
+- GitHub
+- Kaggle
 
 ## Results 
 After evaluating multiple models, we found that the Random Forest Classifier (RFC) outperformed the other four models in terms of accuracy for predicting horse survival. By utilizing RFC, we were able to achieve an impressive prediction accuracy of 95%.
